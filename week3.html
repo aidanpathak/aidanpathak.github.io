@@ -74,3 +74,72 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
       <p>As before, open Fusion 360 and create a sketch on the x,y plane.</p>
       <p>I started with a circle sketch of 3 inches to match the diameter of my organizer's cupholder section.</p>
       <p>I also created an offset of 0.25in to match the cuts made on the organizer.</p>
+      <p><img src="fdm_extrude1.png"></p>
+      <p>Then, I extruded the offset area and joined it with the rest of the sketch.</p>
+      <p>I did the same with the center circle, as well as the newly-extruded base.</p>
+      <p><img src="fdm_extrude2.png"></p>
+      <p>The result is a base for the pot upon which I can build off.</p>
+      <p><img src="fdm_offset.png"></p>
+      <p>With the base complete, I created two offset planes above my pot.</p>
+      <p>I should note that Kevin Elkhoury's tutorial video helped me understand the concept of offset planes more clearly.</p>
+      <p>As he explains in the video, we can use 2D sketches on different planes to create 3D designs.</p>
+      <p><img src="fdm_loft1.png"></p>
+      <p>I used the offset to add two new circle sketches at different heights, allowing for varying depth throughout the pot.</p>
+      <p>I used the loft feature to join the three planes together, which created a solid body in the shape of my pot.</p>
+      <p><img src="fdm_ridge1.png>"></p>
+      <p>For some variety, I added a ridge on the outside of the pot.</p>
+      <p>I did so by creating a rectangular sketch on the z-plane and merging it with the main body.</p>
+      <p><img src="fdm_ridge2.png"></p>
+      <p>Then, I duplicated the ridge around the diameter of the pot.</p>
+      <p>I created a circular pattern out of the original ridge and set its quantity to 10.</p>
+      <p><img src="fdm_cupfinal.png"></p>
+      <p>After that, I used the shell feature to hollow out the inside of the pot.</p>\
+      <p>Finally, I exported the project as an .STL file to load into the PrusaSlicer software.</p>
+      <hr>
+      <br>
+      <p>Now that the file is ready for printing, I will explain how FDM printing works.</p>
+      <p>Much like Fusion the 360 sketches, FDM printing works by extruding individual layers of an object.</p>
+      <p><img src="fdm_base.png"></p>
+      <p>It allows users to load computer-aided designs (CAD files) and print them using multiple layers.</p>
+      <p>To start, the printer must first calibrate the printing surface so that the device maintains proper proportions while printing.</p>
+      <p><img src="fdm_nozzle.jpg"></p>
+      <p>Then, the printer extrudes filament through a heated nozzle, layer by layer.</p>
+      <p>This process continues up from the base, filling each layer with filament where needed.</p>
+      <p>The heated filament fuses as each layer prints, allowing a single object to form out of many layers.</p>
+      <p>FDM printers can also add supports to hold up sections of filament that would otherwise not be able to print layer by layer.</p>
+      <p>This process results in all of the layers fusing to form one solid object.</p>
+      <hr>
+      <br>
+      <p><img src="fdm_printerdemo.jpg"></p>
+      <p>Understanding FDM printing allows us to utilize the PrusaSlicer and its software better.</p>
+      <p>To use the PrusaSlicer, first load your CAD model into the PrusaSlicer software.</p>
+      <p>Change the proportions and positioning of your object as needed, then determine what printing speed to use.</p>
+      <p>(It's important to note that higher speeds can significantly reduce the amount of time needed to print but may reduce the quality of each layer printed)</p>
+      <p>Set any other specifications necessary (i.e., infill or printing material) and click "Slice now."</p>
+      <p><img src="fdm_filltypes.png"></p>
+      <p>The software will display each type of print used throughout the model, layer by layer.</p>
+      <p>Click "Export G-code" to transfer the file to an SD card and prepare it for the PrusaSlicer device.</p>
+      <hr>
+      <br>
+      <p>With all necessary preparations complete, it's time to start printing.</p>
+      <p><img src="fdm_buttons_SDcard.jpg"></p>
+      <p>First, load the file into the printer's SD card slot.</p>
+      <p><img src="fdm_buttons_knob.jpg"></p>
+      <p>Then, utilize this knob to scroll through the printer's settings.</p>
+      <p>Also, make sure that the printing sheet is magnetically attached to the printer's surface.</p>
+      <p><img src="fdm_filament.png"></p>
+      <p>Unload the current filament and load the desired one into the nozzle if you use a specific filament.</p>
+      <p>Allow this filament to preheat, and make sure to avoid touching the nozzle!</p>
+      <p>If you haven't already, make sure to clean the printing surface and calibrate the machine at this point.</p>
+      <p>Then, find the "Print from SD" option and select your file.</p>
+      <p>The filament should start to print your design layer by layer.</p>
+      <p>Make any adjustments in the settings, such as live-adjusting the Z plane.</p>
+      <p><img src="fdm_buttons_X.jpg"></p>
+      <p>If anything seems to go wrong, make sure to click the 'X' button on the printer.</p>
+      <p>Otherwise, stick around at least half an hour to make sure the printing does not go wrong.</p>
+      <p><img src="fdm_final.jpg"></p>
+      <p>I let my design print overnight, and I came back to my final product.</p>
+      <p><img src="fdm_organizerfinal.png"></p>
+      <p>Here it is attached to the item organizer from last week.</p>
+      <p>When I designed the pot, I didn't realize I could make it fit inside the 0.25-inch circle cut.</p>
+      <p>However, it still fits the organizer, and I am pretty happy with how it came out!</p>
