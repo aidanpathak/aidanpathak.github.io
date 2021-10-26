@@ -1,1 +1,100 @@
-<h1>Assignment 4 Documentation</h1>
+<!DOCTYPE html>
+<html lang="en">
+<title>Week IV</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
+.w3-sidebar {
+  z-index: 3;
+  width: 250px;
+  top: 43px;
+  bottom: 0;
+  height: inherit;
+}
+</style>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-theme w3-top w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+    <a href="index.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Home</a>
+    <a href="about.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">About</a>
+    <a href="contact.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Contact</a>
+    <a href="final.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Final Project</a>
+  </div>
+</div>
+
+<!-- Sidebar -->
+<nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5 w3-animate-left" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu">
+    <i class="fa fa-remove"></i>
+  </a>
+  <h4 class="w3-bar-item"><b>Menu</b></h4>
+  <a class="w3-bar-item w3-button w3-hover-black" href="week1.html">Assignment I</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="week2.html">Assignment II</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="week3.html">Assignment III</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="week4.html">Assignment IV</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="week5.html">Assignment V</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="week6.html">Assignment VI</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="week7.html">Assignment VII</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="week8.html">Assignment VIII</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="week9.html">Assignment IX</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="week10.html#">Assignment X</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="week11.html">Assignment XI</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="week12.html">Assignment XII</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="week13.html">Assignment XIII</a>
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
+<div class="w3-main" style="margin-left:250px">
+
+  <div class="w3-row w3-padding-64">
+    <div class="w3-twothird w3-container">
+      <h1 class="w3-text-teal">Week IV - FDM Printing</h1>
+      <hr>
+      <p>This week we'll be working with the Form 3 Low Force Stereolithography 3D printer alongside Fusion 360 to SLA print complex 3D rings.</p>
+      <br>
+      <p>SLA printing is a form of 3D digital fabrication that utilizes liquid resin to construct CAD models.</p>
+      <p>Unlike FDM printing, SLA printing uses light to solidify the material into a solid shape.</p>
+      <p>Since SLA printers use liquid resin, our class will not be physically utilizing the machines this week.</p>
+      <p>Instead, a more experienced TA will print our design files for us.</p>
+      <hr>
+      <p><img src="sla_tutorial.png"></p>
+      <p>To understand the machine we are using this week, I watched Jacob Loberti's SLA printer tutorial.</p>
+      <p>I highly recommend watching it if you plan on SLA printing.</p>
+      <br>
+      <p>Since we did not use the machines ourselves, the tutorial helped visualize the working space and the physical work involved in SLA printing.</p>
+      <p>The video also reinforced the caution required to utilize an SLA printer safely since we are working with much more dangerous materials this week.</p>
+      <p>The resolution is less clear when Jacob works with the PreForm software, so I recommend searching for other videos if you cannot follow along with the designing section.</p>
+      <hr>
+      <br>
+      <p>In designing the ring for this week, I became much more familiar with the Fusion 360 software.</p>
+      <p><img src="sla_tutorial2.jpg"></p>
+      <p>I followed<a href="https://www.youtube.com/watch?v=nVrkTdwI5ps">this tutorial </a>while making my ring.</p>
+      <p>The tutorial helped visualize the initial sketches that would allow me to create a 3D ring.</p>
+      <p>As the tutorial explains, this design incorporates an inner and outer section to create an interlocking 3D ring.</p>
+      <p><img src="ring1.png"></p>
+      <p>To start, I sketched the two segments and rotated them around the Z-axis to create a 3D object.</p>
+      <p><img src="ring2.png"></p>
+      <p>Then I used the fillet feature across the whole circumference of the design, forming a much smoother shape for a ring.</p>
+      <p><img src="ring3.png"></p>
+      <p>I also learned how to add text with the software.</p>
+      <p>Using this tool, we can attach text to a surface of our model</p>
+      <p>From here, we can use the emboss feature to extrude the text around the material.</p>
+      <p>Alternatively, we can engrave the text into the ring.</p>
+      <p>I personally chose this option since I felt it would make the ring spin more smoothly.</p>
+      <hr>
+      <p><img src="ring_final.jpg"></p>
+      <p>After submitting the file, it was printed and ready within a few days.</p>
+      <p>The resolution is low, but the engraving came out quite nicely!</p>
+      <br>
+      <p><a href="https://drive.google.com/file/d/1pkVw-vC7Yu-II7Mr-zLWnjAtID45tx5B/view?usp=sharing">[Link to Design Files]</a></p>
